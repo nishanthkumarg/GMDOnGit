@@ -28,4 +28,4 @@ jobs:
 
       # Execute Gradle commands in GitHub Actions workflows      
       - name: Gradle Clean build
-        run: ./gradlew build
+        run: gradlew build
