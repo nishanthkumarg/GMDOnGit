@@ -27,5 +27,5 @@ jobs:
         uses: gradle/gradle-build-action@v2
 
       # Execute Gradle commands in GitHub Actions workflows      
-      - name: Gradle Clean build
-        run: gradlew build
+      - name: gradlew
+        run: gradle build
