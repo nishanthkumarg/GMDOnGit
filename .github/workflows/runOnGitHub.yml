@@ -34,9 +34,9 @@ jobs:
       - name: GMD device1 setup
         run: ./gradlew app:device1Setup --info
       #Execute Gradle managed device commands
-      - name: GMD device2 setup --info
-        run: ./gradlew app:device2Setup
+      - name: GMD device2 setup 
+        run: ./gradlew app:device2Setup --info
       
       #Execute the all tests on project
-      - name: Exeuting tests on all devices --info
-        run : ./gradlew app:allDevicesDebugAndroidTest
+      - name: Exeuting tests on all devices 
+        run : ./gradlew app:allDevicesDebugAndroidTest --info
