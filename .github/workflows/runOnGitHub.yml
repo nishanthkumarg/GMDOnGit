@@ -27,5 +27,16 @@ jobs:
         uses: gradle/gradle-build-action@v2
 
       # Execute Gradle commands in GitHub Actions workflows      
-      - name: gradlew
-        run: gradle build
+      - name: Execute gradle build
+        run: ./gradlew build
+      
+      #Execute Gradle managed device commands
+      - name: GMD device1 setup
+        run: ./gradlew app:device1Setup
+      #Execute Gradle managed device commands
+      - name: GMD device2 setup
+        run: ./gradlew app:device2Setup
+      
+      #Execute the all tests on project
+      - name: Exeuting tests on all devices
+        run : ./gradlew app:allDevicesDebugAndroidTest
