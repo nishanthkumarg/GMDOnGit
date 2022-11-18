@@ -29,10 +29,15 @@ jobs:
       # Execute Gradle commands in GitHub Actions workflows      
       - name: Execute gradle build
         run: ./gradlew build
-      
+        
+      # Execute the clean managed devices to avoid lack of disk space for emulator snapshot
+      - name: Execute Clean Managed Devices
+        run: ./gradlew app:cleanManagedDevices --info
+        
       #Execute Gradle managed device commands
       - name: GMD device1 setup
         run: ./gradlew -Pandroid.testoptions.manageddevices.emulator.gpu="swiftshader_indirect" app:device1Setup --info
+        
       #Execute Gradle managed device commands
       - name: GMD device2 setup 
         run: ./gradlew app:device2Setup --info
