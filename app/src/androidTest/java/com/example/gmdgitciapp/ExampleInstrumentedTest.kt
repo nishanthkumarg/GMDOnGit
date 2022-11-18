@@ -25,16 +25,21 @@ class ExampleInstrumentedTest {
     //Passing tests
     @Test
     fun passingTest1(){
-        assert(false)
+        assert(true)
     }
 
     @Test
     fun passingTest2(){
-        assert(false)
+        assert(true)
+    }
+    
+    @Test
+    fun passingTest3(){
+        assert(true)
     }
 
     //Failing tests
-    @Test
+   /* @Test
     fun failingTest1(){
         assert(false)
     }
@@ -52,5 +57,5 @@ class ExampleInstrumentedTest {
     @Test
     fun failingTest4(){
         assert(false)
-    }
+    }*/
 }
