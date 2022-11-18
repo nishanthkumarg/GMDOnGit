@@ -40,7 +40,7 @@ jobs:
         
       #Execute Gradle managed device commands
       - name: GMD device2 setup 
-        run: ./gradlew app:device2Setup --info
+        run: ./gradlew -Pandroid.testoptions.manageddevices.emulator.gpu="swiftshader_indirect" app:device2Setup --info
       
       #Execute the all tests on project
       - name: Exeuting tests on all devices 
