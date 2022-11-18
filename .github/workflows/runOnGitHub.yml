@@ -44,4 +44,4 @@ jobs:
       
       #Execute the all tests on project
       - name: Exeuting tests on all devices 
-        run : ./gradlew app:allDevicesDebugAndroidTest --info
+        run : ./gradlew -Pandroid.testoptions.manageddevices.emulator.gpu="swiftshader_indirect" app:allDevicesDebugAndroidTest --info
