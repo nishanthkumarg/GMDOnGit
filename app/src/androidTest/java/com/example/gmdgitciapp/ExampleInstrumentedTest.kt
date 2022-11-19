@@ -53,4 +53,9 @@ class ExampleInstrumentedTest {
     fun failingTest4(){
         assert(false)
     }
+
+    @Test
+    fun failingTest5(){
+        assert(false)
+    }
 }
