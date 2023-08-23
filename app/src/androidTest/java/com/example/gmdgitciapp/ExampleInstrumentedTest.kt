@@ -25,12 +25,12 @@ class ExampleInstrumentedTest {
     //Passing tests
     @Test
     fun passingTest1(){
-        assert(false)
+        assert(true)
     }
 
     @Test
     fun passingTest2(){
-        assert(false)
+        assert(true)
     }
 
     //Failing tests

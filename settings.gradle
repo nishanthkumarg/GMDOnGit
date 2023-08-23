@@ -3,6 +3,9 @@ pluginManagement {
         google()
         mavenCentral()
         gradlePluginPortal()
+        maven {
+            url "/Users/nishanthkumarg/offline_gradle/gmaven_repo-Ig-C1"
+        }
     }
 }
 dependencyResolutionManagement {
@@ -10,6 +13,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+            url "/Users/nishanthkumarg/offline_gradle/gmaven_repo-Ig-C1"
+        }
     }
 }
 rootProject.name = "GMDGitCiApp"
