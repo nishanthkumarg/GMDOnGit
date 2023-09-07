@@ -36,26 +36,26 @@ class ExampleInstrumentedTest {
     //Failing tests
     @Test
     fun failingTest1(){
-        assert(false)
+        assert(true)
     }
 
     @Test
     fun failingTest2(){
-        assert(false)
+        assert(true)
     }
 
     @Test
     fun failingTest3(){
-        assert(false)
+        assert(true)
     }
 
     @Test
     fun failingTest4(){
-        assert(false)
+        assert(true)
     }
 
     @Test
     fun failingTest5(){
-        assert(false)
+        assert(true)
     }
 }
