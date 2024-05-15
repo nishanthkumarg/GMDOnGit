@@ -22,7 +22,7 @@ android {
         devices {
             device1(ManagedVirtualDevice) {
                 device = "Pixel 4"
-                apiLevel = 30
+                apiLevel = 32
                 systemImageSource = "google"
             }
             device2(ManagedVirtualDevice) {
