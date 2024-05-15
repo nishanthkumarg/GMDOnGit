@@ -31,6 +31,11 @@ android {
                 systemImageSource = "google_apis_playstore"
                 require64Bit = true
             }
+            device3(ManagedVirtualDevice) {
+                device = "Pixel 8"
+                apiLevel = 34
+                systemImageSource = "google-atd"
+            }
         }
     }
 
