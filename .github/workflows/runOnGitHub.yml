@@ -35,7 +35,7 @@ jobs:
 
       - name: Install System images
         run: |
-          sudo "$ANDROID_HOME"/cmdline-tools/latest/bin/sdkmanager --install "system-images;android-32;google_apis;x86_64"
+          sudo "$ANDROID_HOME"/cmdline-tools/latest/bin/sdkmanager --install "system-images;android-32;google_apis_playstore;arm64-v8a"
         
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
