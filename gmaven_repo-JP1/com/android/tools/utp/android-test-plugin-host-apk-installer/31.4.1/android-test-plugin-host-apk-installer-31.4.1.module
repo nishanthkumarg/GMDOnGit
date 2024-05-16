@@ -1,0 +1,148 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.android.tools.utp",
+    "module": "android-test-plugin-host-apk-installer",
+    "version": "31.4.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.6"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "android-test-plugin-host-apk-installer-31.4.1.jar",
+          "url": "android-test-plugin-host-apk-installer-31.4.1.jar",
+          "size": 20069,
+          "sha512": "4629f5e7e82529bb079c6114a89bf5885d99867bdecf6156e7c6d4e9b00a96e4a309a92cf39249ef5190f8f369c9980f03f034fccdc2644a4db6e8359c184281",
+          "sha256": "20ef9f61f8fb1d54a9e16f0c496c08c3bbd70fb03c06e2a561d7a464fc04dc0e",
+          "sha1": "29bf0a68a0943904c8e30e5b633eb6b825510adb",
+          "md5": "1d07d231e201587d068e4fcd9d4b4a15"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.tools",
+          "module": "common",
+          "version": {
+            "requires": "31.4.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.9.20"
+          }
+        },
+        {
+          "group": "com.google.protobuf",
+          "module": "protobuf-java",
+          "version": {
+            "requires": "3.22.3"
+          }
+        },
+        {
+          "group": "com.android.tools.utp",
+          "module": "android-test-plugin-host-apk-installer-proto",
+          "version": {
+            "requires": "31.4.1"
+          }
+        },
+        {
+          "group": "com.google.testing.platform",
+          "module": "android-device-provider-local",
+          "version": {
+            "requires": "0.0.9-alpha02"
+          }
+        },
+        {
+          "group": "com.google.testing.platform",
+          "module": "core-proto",
+          "version": {
+            "requires": "0.0.9-alpha02"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "android-test-plugin-host-apk-installer-31.4.1.jar",
+          "url": "android-test-plugin-host-apk-installer-31.4.1.jar",
+          "size": 20069,
+          "sha512": "4629f5e7e82529bb079c6114a89bf5885d99867bdecf6156e7c6d4e9b00a96e4a309a92cf39249ef5190f8f369c9980f03f034fccdc2644a4db6e8359c184281",
+          "sha256": "20ef9f61f8fb1d54a9e16f0c496c08c3bbd70fb03c06e2a561d7a464fc04dc0e",
+          "sha1": "29bf0a68a0943904c8e30e5b633eb6b825510adb",
+          "md5": "1d07d231e201587d068e4fcd9d4b4a15"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "android-test-plugin-host-apk-installer-31.4.1-javadoc.jar",
+          "url": "android-test-plugin-host-apk-installer-31.4.1-javadoc.jar",
+          "size": 261,
+          "sha512": "79169aca5eb8b401e14c2f3eae5f822f86ffd83ef16d7072b7cc91e4f0179643ce943d22abe6937b2d8c56d70c9f6d384ff7c03372054a7220946efc3b00b90a",
+          "sha256": "2aaaa83ca50623f70695830fd712003696199163764aa6a752828f3b17cc9386",
+          "sha1": "7eebad25b6660e84ae98c53000b514b8cf7256e7",
+          "md5": "e4b5ecd445930381347d7bd8677c7270"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "android-test-plugin-host-apk-installer-31.4.1-sources.jar",
+          "url": "android-test-plugin-host-apk-installer-31.4.1-sources.jar",
+          "size": 5797,
+          "sha512": "19e82c7b0c5154d40c0480d29595c6e8d1ed57ccbf0febda2164dee30995cf74c0fd89be266705ee815956fb656e2819dc45eb977df85e8a3e055bde8c9a8354",
+          "sha256": "9bf6ccfba2e1a9d87f0636b18e2e192d1ebec62daa03c9597f2f5d268d8788d9",
+          "sha1": "c18fce36e3b296fbf29195614638cc737352f749",
+          "md5": "619568547e3c772eb9f2edb579fbc6a5"
+        }
+      ]
+    }
+  ]
+}

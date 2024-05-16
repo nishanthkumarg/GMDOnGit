@@ -1,0 +1,104 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.android.databinding",
+    "module": "library",
+    "version": "8.4.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.6"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "8.4.1"
+          }
+        },
+        {
+          "group": "android.arch.lifecycle",
+          "module": "runtime",
+          "version": {
+            "requires": "1.0.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "library-8.4.1.aar",
+          "url": "library-8.4.1.aar",
+          "size": 59775,
+          "sha512": "53376a624baf8117735b9863e197d36499a8b72887455fa6df55e027618b7c593d6a1151e55bf7c8a78e4d48138a4a4339d1816066bb6f408dd2f246ca60eb8e",
+          "sha256": "306b5140118a952a1d656984a5020a84d5b5baa2df70ae99c2a737f3255bca1c",
+          "sha1": "a6f40518f1a57dca0a5eed381542cbfa9befebfd",
+          "md5": "d185d99b7144aadb7d84be65827744eb"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.support",
+          "module": "support-core-utils",
+          "version": {
+            "requires": "26.1.0"
+          }
+        },
+        {
+          "group": "com.android.databinding",
+          "module": "baseLibrary",
+          "version": {
+            "requires": "8.4.1"
+          }
+        },
+        {
+          "group": "com.android.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "8.4.1"
+          }
+        },
+        {
+          "group": "android.arch.lifecycle",
+          "module": "runtime",
+          "version": {
+            "requires": "1.0.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "library-8.4.1.aar",
+          "url": "library-8.4.1.aar",
+          "size": 59775,
+          "sha512": "53376a624baf8117735b9863e197d36499a8b72887455fa6df55e027618b7c593d6a1151e55bf7c8a78e4d48138a4a4339d1816066bb6f408dd2f246ca60eb8e",
+          "sha256": "306b5140118a952a1d656984a5020a84d5b5baa2df70ae99c2a737f3255bca1c",
+          "sha1": "a6f40518f1a57dca0a5eed381542cbfa9befebfd",
+          "md5": "d185d99b7144aadb7d84be65827744eb"
+        }
+      ]
+    }
+  ]
+}

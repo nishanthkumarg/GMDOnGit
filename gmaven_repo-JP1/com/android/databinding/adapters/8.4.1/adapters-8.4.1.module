@@ -1,0 +1,83 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.android.databinding",
+    "module": "adapters",
+    "version": "8.4.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.6"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.databinding",
+          "module": "baseLibrary",
+          "version": {
+            "requires": "8.4.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "adapters-8.4.1.aar",
+          "url": "adapters-8.4.1.aar",
+          "size": 70543,
+          "sha512": "18ad285ecd72d59e47b17505ec00c9304d1d47db0e4bf7121c3e63f57f515771fa244e887bbb4d4a6cb6e5e6aaf33f82ddc01a6c43760b36870823edabbff85b",
+          "sha256": "cf8693ab2bf5016891cead238692c6eb30df76b94244aa263bf4e7b60097facb",
+          "sha1": "7a29f6bf133bc2a7d76630f14e64ee3811f2f5d1",
+          "md5": "e049052a6358c1c48e933c7087711228"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.databinding",
+          "module": "library",
+          "version": {
+            "requires": "8.4.1"
+          }
+        },
+        {
+          "group": "com.android.databinding",
+          "module": "baseLibrary",
+          "version": {
+            "requires": "8.4.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "adapters-8.4.1.aar",
+          "url": "adapters-8.4.1.aar",
+          "size": 70543,
+          "sha512": "18ad285ecd72d59e47b17505ec00c9304d1d47db0e4bf7121c3e63f57f515771fa244e887bbb4d4a6cb6e5e6aaf33f82ddc01a6c43760b36870823edabbff85b",
+          "sha256": "cf8693ab2bf5016891cead238692c6eb30df76b94244aa263bf4e7b60097facb",
+          "sha1": "7a29f6bf133bc2a7d76630f14e64ee3811f2f5d1",
+          "md5": "e049052a6358c1c48e933c7087711228"
+        }
+      ]
+    }
+  ]
+}
