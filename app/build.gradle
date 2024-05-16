@@ -21,12 +21,12 @@ android {
     testOptions {
         devices {
             device1(ManagedVirtualDevice) {
-                device = "Pixel 4"
+                device = "Pixel 8"
                 apiLevel = 32
                 systemImageSource = "aosp-atd"
             }
             device2(ManagedVirtualDevice) {
-                device = "Pixel 4"
+                device = "Pixel 8"
                 apiLevel = 33
                 systemImageSource = "google"
                 require64Bit = true
