@@ -28,7 +28,11 @@ jobs:
         
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
-      
+
+      - name: Install Android Latest Emulator
+        run: |
+          sudo "$ANDROID_HOME"/cmdline-tools/latest/bin/sdkmanager --install "emulator"
+        
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v3
 
