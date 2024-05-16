@@ -4,7 +4,7 @@ pluginManagement {
         mavenCentral()
         gradlePluginPortal()
         maven {
-            url "/Users/nishanthkumarg/offline_gradle/gmaven_repo-IC4"
+            url "gmaven_repo-JP1"
         }
     }
 }
@@ -14,7 +14,7 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven {
-            url "/Users/nishanthkumarg/offline_gradle/gmaven_repo-IC4"
+            url "gmaven_repo-JP1"
         }
     }
 }
