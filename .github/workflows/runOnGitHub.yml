@@ -38,6 +38,6 @@ jobs:
           sudo "$ANDROID_HOME"/cmdline-tools/latest/bin/sdkmanager --install "system-images;android-32;google_apis;x86_64"
         
       - name: Setup Gradle
-        uses: gradle/gradle-build-action@v4
+        uses: gradle/gradle-build-action@v3
 
 
