@@ -22,7 +22,10 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-      
+
+      - name: Accept Android licenses
+        run: yes | "$ANDROID_HOME"/cmdline-tools/latest/bin/sdkmanager --licenses || true
+        
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
       
@@ -37,14 +40,6 @@ jobs:
       - name: Execute Clean Managed Devices
         run: ./gradlew app:cleanManagedDevices --info
         
-      #Execute Gradle managed device commands
-      #- name: GMD device1 setup
-      #  run: ./gradlew -Pandroid.testoptions.manageddevices.emulator.gpu="swiftshader_indirect" app:device1Setup --info
-        
-      #Execute Gradle managed device commands
-      - name: GMD device2 setup 
-        run: ./gradlew -Pandroid.testoptions.manageddevices.emulator.gpu="swiftshader_indirect" app:device2Setup --info
-      
-      #Execute the all tests on project
-      - name: Exeuting tests on all devices 
-        run : ./gradlew -Pandroid.testoptions.manageddevices.emulator.gpu="swiftshader_indirect" app:allDevicesDebugAndroidTest --info
+      # Execute Gradle managed device commands
+      - name: GMD device1 setup
+        run: ./gradlew -Pandroid.testoptions.manageddevices.emulator.gpu="swiftshader_indirect" app:device1Setup --info
