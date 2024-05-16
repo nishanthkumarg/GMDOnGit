@@ -28,9 +28,17 @@ jobs:
         
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
-      
+
+      - name: Install Android Latest Emulator
+        run: |
+          sudo "$ANDROID_HOME"/cmdline-tools/latest/bin/sdkmanager --install "emulator"
+
+      - name: Install System images
+        run: |
+          sudo "$ANDROID_HOME"/cmdline-tools/latest/bin/sdkmanager --install "system-images;android-32;google_apis_playstore;arm64-v8a"
+        
       - name: Setup Gradle
-        uses: gradle/gradle-build-action@v3
+        uses: gradle/actions/setup-gradle@v3
 
       # Execute Gradle commands in GitHub Actions workflows      
       - name: Execute gradle build
@@ -43,3 +51,5 @@ jobs:
       # Execute Gradle managed device commands
       - name: GMD device1 setup
         run: ./gradlew -Pandroid.testoptions.manageddevices.emulator.gpu="swiftshader_indirect" app:device1Setup --info
+
+
