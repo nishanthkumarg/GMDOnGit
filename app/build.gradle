@@ -29,7 +29,6 @@ android {
                 device = "Pixel 8"
                 apiLevel = 33
                 systemImageSource = "google"
-                abi = "x86_64"
             }
             device3(ManagedVirtualDevice) {
                 device = "Pixel 8"
